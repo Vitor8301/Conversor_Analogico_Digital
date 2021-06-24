@@ -17,9 +17,11 @@ void main(void)
 {
     IHM.init();
     ADC_init();
-    IHM.print("ADC: ");
+    IHM.print("C:   F:   K:   ");
     while( 1 )
     {
-        IHM.printv(0,5, (int)ADC_read(), 4 );
+        IHM.printv(1,1, (long)celsius(), 3 );
+        IHM.printv(1,6, fahrenheit(), 3 );
+        IHM.printv(1,11, kelvin(), 3 );
     }
 }

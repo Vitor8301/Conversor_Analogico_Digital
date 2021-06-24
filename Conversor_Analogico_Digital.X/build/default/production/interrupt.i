@@ -2532,6 +2532,9 @@ unsigned int T2_status( void );
 void ADC_init( void );
 void ADC_int( void );
 unsigned int ADC_read( void );
+long celsius( void );
+long fahrenheit( void );
+long kelvin( void );
 # 11 "interrupt.c" 2
 
 

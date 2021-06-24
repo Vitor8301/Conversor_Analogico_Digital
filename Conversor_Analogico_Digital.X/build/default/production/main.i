@@ -2593,6 +2593,9 @@ unsigned int T2_status( void );
 void ADC_init( void );
 void ADC_int( void );
 unsigned int ADC_read( void );
+long celsius( void );
+long fahrenheit( void );
+long kelvin( void );
 # 14 "main.c" 2
 
 
@@ -2600,9 +2603,11 @@ void main(void)
 {
     IHM.init();
     ADC_init();
-    IHM.print("ADC: ");
+    IHM.print("C:   F:   K:   ");
     while( 1 )
     {
-        IHM.printv(0,5, (int)ADC_read(), 4 );
+        IHM.printv(1,1, (long)celsius(), 3 );
+        IHM.printv(1,6, fahrenheit(), 3 );
+        IHM.printv(1,11, kelvin(), 3 );
     }
 }

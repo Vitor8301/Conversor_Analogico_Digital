@@ -404,3 +404,51 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;adc.c: 42: }
 [e :UE 140 ]
 }
+"44
+[; ;adc.c: 44: long celsius( void )
+[v _celsius `(l ~T0 @X0 1 ef ]
+"45
+[; ;adc.c: 45: {
+{
+[e :U _celsius ]
+[f ]
+"46
+[; ;adc.c: 46:     return( ( ( ADC_value / 10) -51 ));
+[e ) -> - / _ADC_value -> -> 10 `i `ui -> -> 51 `i `ui `l ]
+[e $UE 141  ]
+"47
+[; ;adc.c: 47: }
+[e :UE 141 ]
+}
+"49
+[; ;adc.c: 49: long fahrenheit( void )
+[v _fahrenheit `(l ~T0 @X0 1 ef ]
+"50
+[; ;adc.c: 50: {
+{
+[e :U _fahrenheit ]
+[f ]
+"51
+[; ;adc.c: 51:     return( ( ( ( celsius() * 9 ) /5 ) +32 ));
+[e ) + / * ( _celsius ..  -> -> 9 `i `l -> -> 5 `i `l -> -> 32 `i `l ]
+[e $UE 142  ]
+"52
+[; ;adc.c: 52: }
+[e :UE 142 ]
+}
+"54
+[; ;adc.c: 54: long kelvin( void )
+[v _kelvin `(l ~T0 @X0 1 ef ]
+"55
+[; ;adc.c: 55: {
+{
+[e :U _kelvin ]
+[f ]
+"56
+[; ;adc.c: 56:     return ( ( celsius() + 273 ));
+[e ) + ( _celsius ..  -> -> 273 `i `l ]
+[e $UE 143  ]
+"57
+[; ;adc.c: 57: }
+[e :UE 143 ]
+}

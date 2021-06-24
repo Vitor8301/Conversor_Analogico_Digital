@@ -40,3 +40,18 @@ unsigned int ADC_read( void )
 {
     return( ADC_value );
 }
+
+long celsius( void )
+{
+    return( ( ( ADC_value / 10) -51 ));
+}
+
+long fahrenheit( void )
+{
+    return( ( ( ( celsius() * 9 ) /5 ) +32 ));
+}
+
+long kelvin( void )
+{
+    return ( ( celsius() + 273 ));
+}

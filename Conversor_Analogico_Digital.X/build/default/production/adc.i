@@ -2506,6 +2506,9 @@ extern __bank0 __bit __timeout;
 void ADC_init( void );
 void ADC_int( void );
 unsigned int ADC_read( void );
+long celsius( void );
+long fahrenheit( void );
+long kelvin( void );
 # 10 "adc.c" 2
 
 
@@ -2539,4 +2542,19 @@ void ADC_int( void )
 unsigned int ADC_read( void )
 {
     return( ADC_value );
+}
+
+long celsius( void )
+{
+    return( ( ( ADC_value / 10) -51 ));
+}
+
+long fahrenheit( void )
+{
+    return( ( ( ( celsius() * 9 ) /5 ) +32 ));
+}
+
+long kelvin( void )
+{
+    return ( ( celsius() + 273 ));
 }
