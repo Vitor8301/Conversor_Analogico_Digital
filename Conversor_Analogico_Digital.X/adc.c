@@ -43,15 +43,25 @@ unsigned int ADC_read( void )
 
 long celsius( void )
 {
-    return( ( ( ADC_value / 10) -51 ));
+    return( ( ( ADC_value / 10) -51 ) );
 }
 
 long fahrenheit( void )
 {
-    return( ( ( ( celsius() * 9 ) /5 ) +32 ));
+    return( ( ( ( celsius( ) * 9 ) /5 ) +32 ) );
 }
 
 long kelvin( void )
 {
-    return ( ( celsius() + 273 ));
+    return ( ( celsius( ) + 273 ) );
+}
+
+long reaumur( void )
+{
+    return ( ( ( celsius( ) *4 ) / 5 ) );
+}
+
+long rankine( void )
+{
+    return ( ( ( ( celsius( ) * 9) / 5) + 491,67 ) );
 }

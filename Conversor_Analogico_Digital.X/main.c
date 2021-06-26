@@ -15,13 +15,22 @@
 
 void main(void)
 {
-    IHM.init();
-    ADC_init();
-    IHM.print("C:   F:   K:   ");
+    IHM.init( );
+    ADC_init( );
+    
     while( 1 )
     {
-        IHM.printv(1,1, (long)celsius(), 3 );
-        IHM.printv(1,6, fahrenheit(), 3 );
-        IHM.printv(1,11, kelvin(), 3 );
+        IHM.print( "C:   F:   K:    " );
+        IHM.printv( 1, 1, (long)celsius( ), 3 );
+        IHM.printv( 1, 6, fahrenheit( ), 3 );
+        IHM.printv( 1, 11, kelvin( ), 3 );
+        delay( 5000 );
+        dispLCD_clr();
+        IHM.print( "Re:     Ra:     " );
+        IHM.printv( 1, 3, reaumur( ) , 3 );
+        IHM.printv( 1, 10, rankine( ), 3 );
+        delay( 5000 );
+        dispLCD_clr();
     }
 }
+  

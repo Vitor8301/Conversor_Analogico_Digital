@@ -1,9 +1,9 @@
-[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F887 ]
-[d frameptr 6 ]
-"12 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\adc.c
+[d frameptr 0 ]
+"12 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\adc.c
 [v _ADC_init ADC_init `(v  1 e 1 0 ]
 "31
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
@@ -13,29 +13,33 @@
 [v _fahrenheit fahrenheit `(l  1 e 4 0 ]
 "54
 [v _kelvin kelvin `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+"59
+[v _reaumur reaumur `(l  1 e 4 0 ]
+"64
+[v _rankine rankine `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"12 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\delay.c
+"12 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\delay.c
 [v _delay delay `(v  1 e 1 0 ]
-"14 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\interrupt.c
+"14 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\interrupt.c
 [v _isr isr `II(v  1 e 1 0 ]
-"77 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\lcd.c
+"77 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\lcd.c
 [v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
 "110
 [v _dispLCD_dataReg dispLCD_dataReg `(v  1 e 1 0 ]
@@ -55,20 +59,17 @@
 [v _dispLCD_B0 dispLCD_B0 `(uc  1 e 1 0 ]
 "234
 [v _dispLCD_B1 dispLCD_B1 `(uc  1 e 1 0 ]
-"16 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\main.c
+"16 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"33 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\timers.c
+"33 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\timers.c
 [v _T0_int T0_int `(v  1 e 1 0 ]
 "80
 [v _T1_int T1_int `(v  1 e 1 0 ]
 "132
 [v _T2_int T2_int `(v  1 e 1 0 ]
-[s S364 . 7 `*.27(v 1 init 1 0 `*.27(v 1 print 1 1 `*.27(v 1 printpos 1 2 `*.27(v 1 printv 1 3 `*.27(v 1 clr 1 4 `*.27(uc 1 B0 1 5 `*.27(uc 1 B1 1 6 ]
-"15 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X/ihm.h
-[v _IHM IHM `S364  1 e 7 0 ]
-"30 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\adc.c
+"30 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\adc.c
 [v _ADC_value ADC_value `ui  1 e 2 0 ]
-"59 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
+"60 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f887.h
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 [s S22 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -79,7 +80,7 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"482
+"483
 [s S31 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -87,7 +88,7 @@
 ]
 [u S36 . 1 `S22 1 . 1 0 `S31 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES36  1 e 1 @11 ]
-[s S235 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S237 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -95,60 +96,21 @@
 `uc 1 RCIF 1 0 :1:5 
 `uc 1 ADIF 1 0 :1:6 
 ]
-"553
-[u S243 . 1 `S235 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES243  1 e 1 @12 ]
-"657
+"554
+[u S245 . 1 `S237 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES245  1 e 1 @12 ]
+"658
 [v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
-"664
+"665
 [v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
-[s S463 . 1 `uc 1 TMR1ON 1 0 :1:0 
-`uc 1 TMR1CS 1 0 :1:1 
-`uc 1 nT1SYNC 1 0 :1:2 
-`uc 1 T1OSCEN 1 0 :1:3 
-`uc 1 T1CKPS 1 0 :2:4 
-`uc 1 TMR1GE 1 0 :1:6 
-`uc 1 T1GINV 1 0 :1:7 
-]
-"700
-[s S471 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 T1INSYNC 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 T1CKPS0 1 0 :1:4 
-`uc 1 T1CKPS1 1 0 :1:5 
-`uc 1 . 1 0 :1:6 
-`uc 1 T1GIV 1 0 :1:7 
-]
-[s S479 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 T1SYNC 1 0 :1:2 
-]
-[u S482 . 1 `S463 1 . 1 0 `S471 1 . 1 0 `S479 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES482  1 e 1 @16 ]
-"765
-[v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
-[s S521 . 1 `uc 1 T2CKPS 1 0 :2:0 
-`uc 1 TMR2ON 1 0 :1:2 
-`uc 1 TOUTPS 1 0 :4:3 
-]
-"793
-[s S525 . 1 `uc 1 T2CKPS0 1 0 :1:0 
-`uc 1 T2CKPS1 1 0 :1:1 
-`uc 1 . 1 0 :1:2 
-`uc 1 TOUTPS0 1 0 :1:3 
-`uc 1 TOUTPS1 1 0 :1:4 
-`uc 1 TOUTPS2 1 0 :1:5 
-`uc 1 TOUTPS3 1 0 :1:6 
-]
-[u S533 . 1 `S521 1 . 1 0 `S525 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES533  1 e 1 @18 ]
-"1238
+"1239
 [v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
 [s S75 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 `uc 1 ADCS 1 0 :2:6 
 ]
-"1276
+"1277
 [s S80 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
@@ -166,21 +128,7 @@
 ]
 [u S95 . 1 `S75 1 . 1 0 `S80 1 . 1 0 `S89 1 . 1 0 `S92 1 . 1 0 ]
 [v _ADCON0bits ADCON0bits `VES95  1 e 1 @31 ]
-[s S436 . 1 `uc 1 PS 1 0 :3:0 
-`uc 1 PSA 1 0 :1:3 
-`uc 1 T0SE 1 0 :1:4 
-`uc 1 T0CS 1 0 :1:5 
-`uc 1 INTEDG 1 0 :1:6 
-`uc 1 nRBPU 1 0 :1:7 
-]
-"1366
-[s S443 . 1 `uc 1 PS0 1 0 :1:0 
-`uc 1 PS1 1 0 :1:1 
-`uc 1 PS2 1 0 :1:2 
-]
-[u S447 . 1 `S436 1 . 1 0 `S443 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES447  1 e 1 @129 ]
-[s S287 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S289 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -189,9 +137,9 @@
 `uc 1 TRISD6 1 0 :1:6 
 `uc 1 TRISD7 1 0 :1:7 
 ]
-"1619
-[u S296 . 1 `S287 1 . 1 0 ]
-[v _TRISDbits TRISDbits `VES296  1 e 1 @136 ]
+"1620
+[u S298 . 1 `S289 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES298  1 e 1 @136 ]
 [s S136 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
@@ -200,12 +148,10 @@
 `uc 1 RCIE 1 0 :1:5 
 `uc 1 ADIE 1 0 :1:6 
 ]
-"1718
+"1719
 [u S144 . 1 `S136 1 . 1 0 ]
 [v _PIE1bits PIE1bits `VES144  1 e 1 @140 ]
-"2041
-[v _PR2 PR2 `VEuc  1 e 1 @146 ]
-"2970
+"2971
 [v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
 [s S121 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG0 1 0 :1:4 
@@ -213,7 +159,7 @@
 `uc 1 . 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
-"2991
+"2992
 [u S127 . 1 `S121 1 . 1 0 ]
 [v _ADCON1bits ADCON1bits `VES127  1 e 1 @159 ]
 [s S54 . 1 `uc 1 ANS0 1 0 :1:0 
@@ -225,30 +171,43 @@
 `uc 1 ANS6 1 0 :1:6 
 `uc 1 ANS7 1 0 :1:7 
 ]
-"3404
+"3405
 [u S63 . 1 `S54 1 . 1 0 ]
 [v _ANSELbits ANSELbits `VES63  1 e 1 @392 ]
-[s S276 . 1 `uc 1 BUS 1 0 :4:0 
+[s S366 . 7 `*.27(v 1 init 1 0 `*.27(v 1 print 1 1 `*.27(v 1 printpos 1 2 `*.27(v 1 printv 1 3 `*.27(v 1 clr 1 4 `*.27(uc 1 B0 1 5 `*.27(uc 1 B1 1 6 ]
+"15 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\ihm.h
+[v _IHM IHM `S366  1 e 7 0 ]
+[s S278 . 1 `uc 1 BUS 1 0 :4:0 
 `uc 1 RS 1 0 :1:4 
 `uc 1 EN 1 0 :1:5 
 `uc 1 B0 1 0 :1:6 
 `uc 1 B1 1 0 :1:7 
 ]
-"34 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\lcd.c
-[u S282 . 1 `S276 1 . 1 0 ]
-[v _LCDbits LCDbits `VES282  1 e 1 @8 ]
-"15 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\timers.c
+"34 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\lcd.c
+[u S284 . 1 `S278 1 . 1 0 ]
+[v _LCDbits LCDbits `VES284  1 e 1 @8 ]
+"15 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\timers.c
 [v _T0count T0count `ui  1 e 2 0 ]
 "16
 [v _T1count T1count `ui  1 e 2 0 ]
 "17
 [v _T2count T2count `ui  1 e 2 0 ]
-"16 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\main.c
+"16 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"27
+"35
 } 0
-"54 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\adc.c
+"59 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\adc.c
+[v _reaumur reaumur `(l  1 e 4 0 ]
+{
+"62
+} 0
+"64
+[v _rankine rankine `(l  1 e 4 0 ]
+{
+"67
+} 0
+"54
 [v _kelvin kelvin `(l  1 e 4 0 ]
 {
 "57
@@ -263,7 +222,7 @@
 {
 "47
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
@@ -275,7 +234,7 @@
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -285,7 +244,7 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 15 ]
 "129
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "10
@@ -298,7 +257,7 @@
 [v ___aldiv@dividend dividend `l  1 p 4 27 ]
 "41
 } 0
-"164 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\lcd.c
+"164 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\lcd.c
 [v _dispLCDstr dispLCDstr `(v  1 e 1 0 ]
 {
 [v dispLCDstr@str str `*.24DCuc  1 p 1 4 ]
@@ -340,7 +299,7 @@
 [v dispLCD_dataReg@d d `uc  1 a 1 5 ]
 "123
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 {
 "10
@@ -351,7 +310,7 @@
 [v ___awmod@dividend dividend `i  1 p 2 2 ]
 "34
 } 0
-"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "10
@@ -364,10 +323,21 @@
 [v ___awdiv@dividend dividend `i  1 p 2 2 ]
 "41
 } 0
-"132 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\lcd.c
+"132 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\lcd.c
 [v _dispLCD_init dispLCD_init `(v  1 e 1 0 ]
 {
 "150
+} 0
+"12 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `ui  1 p 2 4 ]
+"19
+} 0
+"223 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\lcd.c
+[v _dispLCD_clr dispLCD_clr `(v  1 e 1 0 ]
+{
+"226
 } 0
 "77
 [v _dispLCD_instReg dispLCD_instReg `(v  1 e 1 0 ]
@@ -378,23 +348,17 @@
 [v dispLCD_instReg@i i `uc  1 a 1 0 ]
 "107
 } 0
-"12 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\delay.c
-[v _delay delay `(v  1 e 1 0 ]
-{
-[v delay@t t `ui  1 p 2 4 ]
-"19
-} 0
-"12 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\adc.c
+"12 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\adc.c
 [v _ADC_init ADC_init `(v  1 e 1 0 ]
 {
 "28
 } 0
-"14 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\interrupt.c
+"14 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\interrupt.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
 "36
 } 0
-"132 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\timers.c
+"132 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\timers.c
 [v _T2_int T2_int `(v  1 e 1 0 ]
 {
 "138
@@ -409,7 +373,7 @@
 {
 "40
 } 0
-"31 C:\Users\21193634\MPLABXProjects\Conversor_Analogico_Digital\Conversor_Analogico_Digital.X\adc.c
+"31 C:\Users\55119\MPLABXProjects\Conversor_Analogico_Digital-master\Conversor_Analogico_Digital.X\adc.c
 [v _ADC_int ADC_int `(v  1 e 1 0 ]
 {
 "37
